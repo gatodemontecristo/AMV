@@ -1,0 +1,38 @@
+.logo{
+
+}
+.logo_imagen{
+    height: 61px;
+    width: 140px;
+
+}
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    
+  }
+li a{
+    padding: 45px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    background: #092a49;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+li a:hover {
+    background-color: cornflowerblue;
+  }

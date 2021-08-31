@@ -1,0 +1,334 @@
+header{
+	width: 100%;
+	height: 90px;
+	background: #092a49;
+	position: relative;
+	z-index: 999;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+/* header h1{
+	display: inline-block;
+    width: 20%;
+    min-width: 200px;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 80px;
+}
+header h1 figure img{
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+} */
+/* Colocar centro de forma vertical. Mas info en : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-vertical */
+/* display: inline-block; */
+.contenedor {
+    
+    /* margin: 0; */
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  header > * {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 0.8em;
+    margin: 0px 3px;
+    margin-left: 80px;
+}
+header figure{
+    height: 61px;
+    width: 140px;
+    margin: 0px;
+    /* margin-left: 80px; */
+}
+header figure img{
+    height: 100%;
+}
+/* Quitar el borde-margen por defecto del BODY*/
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+
+@media screen and (min-width: 767px){
+    body{
+		background: yellow;
+	}
+	header nav{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+        position: absolute;
+         top: 50%;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); 
+        /* margin-right: 100px;*/
+	}
+	header nav #navlista{
+		display: inline-block;
+		border: none;
+		background: none;
+		/* position: relative; */
+		/* top: 0px; */
+        float: right;
+		width: 500px;
+		text-align: right;
+		padding-bottom: 0px;
+	}
+	header nav #navlista ul{
+        /* margin-right: 200px; */
+		/* margin: 0px;
+		margin-top: -15px; */
+	}
+	header nav #navlista ul li{
+		display: inline-block;
+		width: 75px;
+		text-align: center;
+		font-size: 1.2em;
+		 margin: 0px 20px; 
+	}
+	header nav #navlista ul li a{
+		color: white;
+        font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+	}
+}
+@media screen and (min-width: 950px){
+    body{
+		background: white;
+	}
+    
+ }
+
+ .principal h1{
+    text-align: center;
+    color: #223F59;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 20px;
+ }
+ .principal p{
+    color: #223F59;
+    font-size: 20px;
+    margin-bottom: 25px;
+ }
+ .contenedor .principal {
+    /* position: absolute; */
+    /* max-width: 700px; */
+    /* max-width: 550px;
+    height: calc(100vh - 35px);
+    display: flex; */
+    align-items: center;
+     justify-content: center;
+    /*oflex-direction: column;
+    z-index: 2; */
+}
+
+
+ /* .carousel {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 35px);
+    min-height: 400px;
+    background: #ffffff;
+    margin-bottom: 45px;
+}
+.carousel .container-fluid {
+    padding: 0;
+}
+.container-fluid {
+    max-width: 1366px;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel .carousel-item {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 35px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel .carousel-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    overflow: hidden;
+} */
+
+/* ESTILOS DE LOS TEXTOS */
+ /* .carousel .carousel-text {
+    position: absolute;
+    max-width: 550px;
+    height: calc(100vh - 35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+ .carousel .carousel-text p {
+    color: #223F59;
+    text-align: JUSTIFY;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ .carousel .carousel-text h1 {
+    text-align: center;
+    color: #223F59;
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #092a49;
+    font-family: 'Lato', sans-serif;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
+.fact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    background-color: #f1f1f1;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+/* ITEMS */
+/* .align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.fact .fact-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px 0 25px 0;
+    text-align: center;
+    background: #f1f1f1;
+    border: 1px solid transparent;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    transition: .3s;
+}
+.fact .fact-item img {
+    max-height: 50px;
+    margin-bottom: 15px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.fact .fact-item h2 {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+@media (min-width: 768px){
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    }
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px){
+.container, .container-sm {
+    max-width: 540px;
+}
+}
+@media (min-width: 768px){
+.container {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px){
+.container {
+    max-width: 540px;
+}
+}
+
+
+
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}}
+@media (min-width: 992px){
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}}
+@media (min-width: 1200px){
+.container {
+    max-width: 1140px;
+}}
+@media (min-width: 992px){
+.container {
+    max-width: 960px;
+}}
+ */
