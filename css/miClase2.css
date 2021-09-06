@@ -29,6 +29,7 @@ header{
     background: #092a49;
     align-items: center;
     overflow: hidden;
+    font-weight: 900;
     font-family: 'Lato', sans-serif;
     
 }
@@ -36,3 +37,32 @@ header{
 li a:hover {
     background-color: cornflowerblue;
   }
+
+  .flex-texto{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      height: 600px;
+      text-align: center;
+      align-items: center;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+  .flex-texto_1{
+      /* padding: 20px 40px; */
+      color: #223F59;
+      font-family: 'Lato', sans-serif;
+  }
+  
+  .flex-texto_1--cabecera{
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .flex-texto_1--pe{
+    font-size: 20px;
+    padding-left: 7%;
+    font-weight: 400;
+      padding-right: 7%;
+  }
+  /* h1, p{
+    font-family: 'Lato', sans-serif;
+  } */
